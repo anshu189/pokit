@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,600;0,800;0,900;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moirai+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+:root{
+    --bg-dark: #202425;
+    --fg-light-yellow: #f3f35a;  
+    --fg-light-green: #70e087; 
+    --fg-light-purple: #8a62da; 
+    --white-smoke: #f7f7f7; 
+}
+
+
+.parent-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url("C:\\Users\\anshu\\OneDrive\\Desktop\\ALL\\MERN\\Pokemon\\pokit\\assets\\purpleflow.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 65%;
+    flex-direction: column;
+    border-radius: 80px;
+    padding: 1rem 0;
+    background: #2024251e;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 50px var(--bg-dark);
+}
+
+.title-cont, .login-cont, .btn-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+
+.title-cont{
+    margin: 0.5rem 0 0 0;
+}
+
+.btn-cont{
+    margin: 0 0 1rem 0; 
+}
+
+/* POKIT */
+.w-name{
+    font-size: 8rem;
+    /* font-family: 'Moirai One', cursive; */
+    font-family: 'Kaushan Script', cursive;
+    color: var(--white-smoke);
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.w-name:hover{
+    color: var(--fg-light-yellow);
+}
+.w-name::selection{
+    background: transparent;
+    color: var(--fg-light-yellow);
+}
+
+/* POPOVER */
+.icon{
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    margin: -21rem 0 0 41rem;
+    color: var(--white-smoke);
+}
+
+/* LOGIN */
+.login-text{
+    font-size: 3.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    color:var(--fg-light-yellow);
+    margin: -rem 0 0 0;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+/* INPUT */
+.input-cont input{
+    width: 22rem;
+    height: 4rem;
+    border: none;
+    outline:none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color:var(--bg-dark);
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+.btn-cont button{
+    width: 22rem;
+    height: 4rem;
+    background: var(--fg-light-yellow);
+    color: var(--bg-dark);
+    border-radius: 5px;
+    font-size: 1.3rem;
+    outline:none;
+    border: 1px solid var(--fg-light-yellow);
+    cursor:pointer;
+    text-transform: uppercase ;
+    transition: all 0.2s linear;
+}
+
+.btn-cont span{
+    font-size: 1.7rem;
+}
+
+.btn-cont button:hover{
+    color: var(--fg-light-yellow);
+    background-color: transparent;
+}

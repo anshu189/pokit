@@ -1,0 +1,8 @@
+.msg{
+    width: 35%;
+    height: 12%;
+    padding: 0.6rem 0.8rem 0.5rem 1rem;
+    border-radius: 0px 15px 15px 15px;
+    background: var(--highlight-dark-black);
+    margin: 0.5rem 0;
+}

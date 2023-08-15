@@ -106,8 +106,8 @@ function NewChat() {
           <div className="chats chat-1">
             {<FaUserCircle className="u-icon user-icon-1"/>}
             <div className="name-msg">
-              <div className="u-name user-name-1">4n5hu</div>
-              <div className="u-msg user-msg-1">Aur be kya kr...</div>
+              <div className="u-name user-name-1">Elliot</div>
+              <div className="u-msg user-msg-1">H4ck3r...</div>
             </div>
             <div className="m-time msg-time-1">07:23pm</div>
           </div>
@@ -139,7 +139,7 @@ function NewChat() {
         <div className="chat-window-header">
           <div className="convo-cont">
             {<FaUserCircle className="current-user-icon"/>}
-            <div className="convo-tag">Conversation with Nikks</div>
+            <div className="convo-tag">Elliot</div>
           </div>
         </div>
 

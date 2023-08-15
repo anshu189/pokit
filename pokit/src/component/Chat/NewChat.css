@@ -4,6 +4,7 @@
 
 :root{
     --bg-light-black: #36393D;
+    --bg-yellow:#d9d962;
     --bg-send-msg: #404040;
     --highlight-dark-black: #222222;
     --dark-black: #2222228a;
@@ -12,33 +13,33 @@
     --whitesomke: #ffffff;
     --fg-sand: #7b713b80;
     --fg-red: #7b3b3b80;
+    --fg-cimson: #cc4f4f;
 }
 
 .parent-cont-chat{
     width: 100%;
     height: 100%;
-    padding: 1rem;
     display: flex;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     background: var(--highlight-dark-black);
+    background: url("C:\\Users\\anshu\\OneDrive\\Desktop\\ALL\\MERN\\Pokemon\\pokit\\assets\\yellowflow.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .main-cont-chat{
-    width: 80%;
-    border: 2px solid var(--bg-light-black);
-    border-radius: 75px 75px 0 0;
+    width: 100%;
 }
 
 .navbar-chat{
     height: 15%;
     display: flex;
     color:var(--whitesomke);
-    border-radius: 70px 70px 0 0;
     justify-content: space-between;
-    background: var(--bg-light-black);
+    background:var(--bg-light-black);
     padding: 0.3rem 2rem 1.5rem 2.5rem;
-    border: 2px solid var(--bg-light-black);
+    border: 1px solid var(--bg-light-black);
 }
 .left-logo-cont{
     cursor: pointer;
@@ -47,7 +48,14 @@
     font-size: 3.1rem;
     font-family: 'Kaushan Script', cursive;
     text-transform: uppercase;
+    transition: 0.3s linear all;
 }
+.pokit-logo:hover{
+    transform: translateX(5px);
+    /* color: #cc4f4f; */
+    color: var(--bg-yellow);
+}
+
 .meta{
     font-weight: 100;
     font-size: 0.7rem;
@@ -84,12 +92,13 @@ hr{
     display: flex;
     padding: 0.5rem 0 0 0;
     justify-content: space-between;
-    background: var(--bg-light-black);
+    
+    /* -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); */
 }
 
 .lside-chats-cont, .chat-window{
     width: 60%;
-    /* border:1px solid red; */
 }
 
 .lside-chats-cont{
@@ -132,6 +141,7 @@ hr{
     flex-direction: column;
     margin: 0.5rem 0 0 0;
     padding: 0.2rem 0; 
+    
 }
 
 .chats{
@@ -146,15 +156,23 @@ hr{
     justify-content: space-evenly;
     color: var(--whitesomke);
     background: var(--bg-light-black);
+    transition: 0.5s linear all;
+    margin: 0 0 0.5rem 0;
 }
 
-/* .chat-1{
-    background: var(--fg-light-cyan) !important;
-} */
+.chats:hover{
+    /* background: #84d33abd !important; */
+    background: #b1b14d !important;
+}
 
-.chat-2{
+.chat-1{
+    background: var(--bg-light-black) !important;
+}
+
+
+/* .chat-2{
     background: var(--highlight-dark-black) !important;
-}
+} */
 
 /* .chat-3{
     background: var(--fg-red) !important;
@@ -175,6 +193,7 @@ hr{
 
 .u-msg{
     font-size: 0.6rem;
+    margin: 0 0 0 0.1rem;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -191,14 +210,18 @@ hr{
     height:100%;
     flex-basis: 75%;
     border-radius: 25px 25px 0 0;
-    background: var(--dark-black);
+    background: url("C:\\Users\\anshu\\OneDrive\\Desktop\\ALL\\MERN\\Pokemon\\pokit\\assets\\cute_hehe_dark.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .chat-window-header{
     height: 12%;
     padding: 0.6rem 1.5rem;
     color: var(--whitesomke);
-    background: var(--fg-cyan);
+    
+    /* background: var(--highlight-dark-black); */
+    background: #cc4f4f;
     border-radius: 25px 25px 0 0;
     cursor: pointer;
 }
@@ -221,7 +244,7 @@ hr{
 .sendmsg-cont{
     width: auto;
     height: 10%;
-    margin: 1rem;
+    margin: 1.5rem 1rem 0 1rem;
     padding: 1rem;
     cursor: text;
     display: flex;
@@ -262,8 +285,8 @@ hr{
 }
 
 .send-icon{
-    width: 35%;
-    height: 35%;
+    width: 30%;
+    height: 30%;
     padding: 0.3rem;
     background: var(--fg-cyan);
     border-radius: 50px;
@@ -274,6 +297,12 @@ hr{
 .send-icon:hover{
     /* scale: 1.2; */
     rotate: 30deg;
+}
+
+.doc-icon{
+    width: 30%;
+    height: 30%;
+    margin: 0 0 0 1rem;
 }
 
 /* Live Chat Window */
@@ -301,6 +330,10 @@ hr{
     border-radius: 0px 15px 15px 15px;
     background: var(--highlight-dark-black);
     margin: 0.5rem 0;
+    overflow: hidden;
+    word-wrap: break-word;
+    position: relative;
+
 }
 
 .rmsgs{
@@ -308,4 +341,5 @@ hr{
 }
 .smsgs{
     text-align: right;
+    background: rgb(202, 70, 70);
 }

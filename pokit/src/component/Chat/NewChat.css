@@ -23,7 +23,7 @@
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     background: var(--highlight-dark-black);
-    background: url("C:\\Users\\anshu\\OneDrive\\Desktop\\ALL\\MERN\\Pokemon\\pokit\\assets\\yellowflow.svg");
+    background: url("../../../assets/yellowflow.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -210,7 +210,7 @@ hr{
     height:100%;
     flex-basis: 75%;
     border-radius: 25px 25px 0 0;
-    background: url("C:\\Users\\anshu\\OneDrive\\Desktop\\ALL\\MERN\\Pokemon\\pokit\\assets\\cute_hehe_dark.png");
+    background: url("../../../assets/cute_hehe_dark.png");
     background-size: cover;
     background-repeat: no-repeat;
 }

@@ -17,7 +17,7 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: url("C:\\Users\\anshu\\OneDrive\\Desktop\\ALL\\MERN\\Pokemon\\pokit\\assets\\purpleflow.svg");
+    background: url("../../../assets/purpleflow.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
